@@ -8,10 +8,10 @@ The ageCalculator function should return a string explaining how old the person 
 "John is 32 years old."
 */
 
-
-function ageCalculator(name, yearOfBirth, currentYear){
+const ageCalculator = function(name, yearOfBirth, currentYear){
   const age = currentYear - yearOfBirth
-  console.log(`${name} is ${age} years old.`)
+  const message = `${name} is ${age} years old.`
+  // console.log(message)
+  return message
 }
-
 ageCalculator("Ron", 1993, 2025)
